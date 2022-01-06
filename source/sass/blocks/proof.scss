@@ -1,0 +1,54 @@
+.proof {
+  background-color: $color-grey-7;
+  padding: 25px 0 40px 0;
+
+  @media (min-width: $tablet-width) {
+    background-color: $color-white;
+    padding: 43px 0 55px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $color-grey-7;
+    padding: 43px 0 55px 0;
+  }
+}
+
+.proof__title {
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 63px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -150px;
+    margin-bottom: 100px;
+  }
+}
+
+.proof__description {
+  margin-bottom: 40px;
+
+  @media (min-width: $desktop-width) {
+    width: 430px;
+  }
+}
+
+.proof__text {
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 69px;
+  }
+}
+
+.proof__wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}

@@ -1,0 +1,60 @@
+.partnership__title {
+  font-family: $font-custom;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  width: 130px;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+    width: 172px;
+  }
+}
+
+.partnership__text {
+  font-family: $font-default;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  width: 140px;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: end;
+    width: 160px;
+  }
+}
+
+.partnership__description {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 10px;
+  background-color: $color-white;
+  padding: 26px 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 50px;
+  }
+}
+
+.partnership__text--city {
+  @media (min-width: $tablet-width) {
+    display: block;
+    margin-top: 10px;
+  }
+}

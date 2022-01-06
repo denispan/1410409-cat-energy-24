@@ -1,1 +1,23 @@
-// Начните писать стили здесь
+/*global*/
+@import "global/variables.scss";
+@import "global/global.scss";
+@import "global/fonts.scss";
+@import "global/visually-hidden.scss";
+@import "global/list-reset.scss";
+
+/*index.html*/
+@import "blocks/page.scss";
+@import "blocks/button.scss";
+@import "blocks/section.scss";
+@import "blocks/wrapper.scss";
+@import "blocks/popup-nav.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/promo.scss";
+@import "blocks/promo-cards.scss";
+@import "blocks/copyright.scss";
+@import "blocks/parameters-list.scss";
+@import "blocks/partnership.scss";
+@import "blocks/work.scss";
+@import "blocks/proof.scss";
+@import "blocks/cat-slider.scss";
+@import "blocks/footer-links.scss";

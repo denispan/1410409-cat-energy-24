@@ -1,0 +1,18 @@
+.cat-slider {
+  @media (min-width: $tablet-width) {
+    background-color: $color-grey-7;
+  }
+}
+
+.cat-slider__image {
+  text-align: center;
+}
+
+.cat-slider__image--after {
+  display: none;
+}
+
+.cat-slider__controls {
+  display: flex;
+  justify-content: center;
+}
