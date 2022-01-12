@@ -1,0 +1,13 @@
+.header-logo {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.header-logo__image {
+  margin-right: 56px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 12px;
+  }
+}

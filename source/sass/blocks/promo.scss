@@ -1,64 +1,40 @@
 .promo {
-  margin-bottom: 20px;
+  background: url("../img/bg_promo_cat_mob.jpg") top center no-repeat,
+    linear-gradient($color-green-2 302px, $color-white 302px);
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 45px;
+    background: none;
   }
+}
 
-  @media (min-width: $desktop-width) {
-    margin-bottom: 71px;
+.promo__wrapper {
+  text-align: center;
+  padding-top: 27px;
+  padding-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 62px;
+    padding-left: 117px;
   }
 }
 
 .promo__title {
-  width: 250px;
   font-family: $font-custom;
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
-  color: $color-white;
   text-align: center;
+  width: 250px;
   margin: 0 auto 25px auto;
-  padding: 0;
+  color: $color-white;
 
   @media (min-width: $tablet-width) {
-    width: 420px;
+    width: 415px;
     font-size: 60px;
     line-height: 60px;
     color: $color-black;
     text-align: start;
-    margin: 0 0 41px 0;
-  }
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 63px;
-    left: 0;
-    width: 100%;
-    height: 302px;
-    background-color: $color-green-1-85;
-    z-index: -1;
-
-    @media (min-width: $tablet-width) {
-      content: none;
-    }
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 63px;
-    left: 0;
-    width: 100%;
-    height: 302px;
-    background-image: url("../img/bg_promo_cat_mob.jpg");
-    background-repeat: no-repeat;
-    z-index: -2;
-
-    @media (min-width: $tablet-width) {
-      content: none;
-    }
+    margin: 0 0 40px 0;
   }
 }
 
@@ -67,28 +43,21 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 14px;
-  width: 200px;
   color: $color-white;
-  text-align: center;
-  margin: 0 auto 302px auto;
-  padding: 0;
+  margin: 0 auto 29px auto;
+  text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
     color: $color-black;
-    width: 290px;
     text-align: start;
-    margin: 0 auto 49px 0;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-bottom: 52px;
+    margin: 0 0 20px 0;
   }
 }
 
 .promo__button {
   @media (min-width: $tablet-width) {
-    max-width: 244px;
+    width: 244px;
   }
 }

@@ -1,61 +1,59 @@
-.promo-cards {
-  display: flex;
-  flex-direction: column;
-  row-gap: 20px;
-
-  @media (min-width: $tablet-width) {
-    row-gap: 30px;
-  }
-
+.program-cards {
   @media (min-width: $desktop-width) {
-    flex-direction: row;
-    column-gap: 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
   }
 }
 
-.promo-cards__item {
+.program-cards__item {
   padding: 30px 33px 20px 20px;
+  margin-bottom: 20px;
   background-color: $color-grey-2;
 
   @media (min-width: $tablet-width) {
-    padding: 77px 316px 57px 52px;
+    padding: 77px 52px 57px 52px;
+    margin-bottom: 30px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 77px 51px 59px 52px;
+    padding: 77px 50px 59px 51px;
+    margin-bottom: 0;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
   }
 }
 
-.promo-cards__title {
-  margin: 0;
-  padding: 0;
+.program-cards__title {
+  margin: 0 0 29px 71px;
   font-family: $font-custom;
   font-size: 24px;
   line-height: 37px;
   font-weight: 400;
   color: $color-black;
   text-transform: uppercase;
-  text-align: center;
-  margin-bottom: 29px;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
+    margin-left: 0;
     margin-bottom: 24px;
   }
 
   @media (min-width: $desktop-width) {
+    margin-left: 162px;
     margin-bottom: 73px;
   }
 }
 
-.promo-cards__text {
-  margin: 0;
-  padding: 0;
-  margin-bottom: 42px;
+.program-cards__text {
+  margin: 0 0 42px 0;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 52px;
+    color: $color-black;
   }
 
   @media (min-width: $desktop-width) {
@@ -63,13 +61,16 @@
   }
 }
 
-.promo-cards__button {
-  font-size: 16px;
-  line-height: 16px;
+.program-cards__button {
+  padding: 0;
+  width: 135px;
   justify-content: start;
 
   @media (min-width: $tablet-width) {
-    font-size: 20px;
-    line-height: 30px;
+    width: 165px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 168px;
   }
 }

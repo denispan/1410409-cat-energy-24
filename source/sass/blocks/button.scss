@@ -10,14 +10,8 @@
   width: 100%;
   background-color: transparent;
   color: $color-black;
-  padding: 0;
   margin: 0;
   border: none;
-}
-
-.button__primary {
-  background-color: $color-green-1;
-  color: $color-white;
   padding: 7px;
 
   @media (min-width: $tablet-width) {
@@ -26,14 +20,13 @@
     padding: 14px 26px;
   }
 
-  &--inner {
-    font-size: 16px;
-    line-height: 20px;
+  &--primary {
+    background-color: $color-green-1;
+    color: $color-white;
+  }
 
-    @media (min-width: $tablet-width) {
-      font-size: 20px;
-      line-height: 20px;
-      padding: 13px 26px;
-    }
+  &--secondary {
+    background-color: $color-grey-2;
+    color: $color-grey-5;
   }
 }

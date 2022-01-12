@@ -1,0 +1,49 @@
+.select-program {
+  padding-top: 25px;
+  padding-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 64px;
+    padding-bottom: 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 73px;
+    padding-bottom: 82px;
+  }
+}
+
+.select-program__title {
+  font-family: $font-custom;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  color: $color-black;
+  margin: 0 0 39px 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 56px;
+  }
+}
+
+.select-program__text {
+  font-family: $font-custom;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $color-black;
+  text-transform: uppercase;
+  margin: 0 0 39px 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 66px;
+  }
+}
