@@ -1,0 +1,34 @@
+.extra-goods__name {
+  font-family: $font-custom;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  color: $color-grey-6;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.extra-goods__quantity,
+.extra-goods__price {
+  font-family: $font-default;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  color: $color-grey-5;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.extra-goods__description {
+  margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 21px;
+  }
+}

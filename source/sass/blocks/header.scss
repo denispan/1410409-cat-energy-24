@@ -1,0 +1,29 @@
+.header {
+  min-width: 280px;
+}
+
+.header__wrapper {
+  display: flex;
+  padding: 10px 20px 17px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 18px 30px 10px 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 60px 110px 29px 110px;
+  }
+}
+
+.header__toggle {
+  margin-left: auto;
+  width: max-content;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.header__nav {
+  margin-left: auto;
+}

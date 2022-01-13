@@ -1,0 +1,16 @@
+.copyright__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.copyright__text {
+  font-size: 16px;
+  line-height: 18px;
+  color: $color-grey-5;
+  margin-right: 140px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 22px;
+  }
+}

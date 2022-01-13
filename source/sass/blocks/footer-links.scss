@@ -1,0 +1,17 @@
+.footer-links {
+  background-color: $color-grey-2;
+}
+
+.footer-links__list {
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.footer-links__item {
+  padding: 39px 10px 32px 10px;
+}

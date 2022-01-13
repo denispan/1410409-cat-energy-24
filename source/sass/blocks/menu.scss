@@ -1,0 +1,33 @@
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu__item {
+  margin-right: 34px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.menu__link {
+  font-family: $font-custom;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  color: $color-black;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-family: $font-custom;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}

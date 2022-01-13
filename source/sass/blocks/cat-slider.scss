@@ -1,0 +1,36 @@
+.cat-slider__image {
+  margin: 0 auto;
+  width: 280px;
+  height: 232px;
+
+  @media (min-width: $tablet-width) {
+    width: 592px;
+    height: 1022px;
+  }
+}
+
+.cat-slider__image--before {
+  object-fit: fill;
+}
+
+.cat-slider__image--after {
+  display: none;
+}
+
+.cat-slider__controls {
+  display: flex;
+  justify-content: center;
+}
+
+.cat-slider__button {
+  font-family: $font-custom;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $color-black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
