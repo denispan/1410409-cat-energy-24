@@ -1,5 +1,22 @@
 .header {
   min-width: 280px;
+
+  &--index {
+    @media (min-width: $desktop-width) {
+      &::before {
+        content: "";
+        position: absolute;
+        right: 0;
+        width: 50%;
+        height: 694px;
+        background-image: url("../img/bg_promo_cat_desk.jpg");
+        background-repeat: no-repeat;
+        background-position: right 0 top;
+        background-color: $color-green-3;
+        z-index: -1;
+      }
+    }
+  }
 }
 
 .header__wrapper {
@@ -11,7 +28,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 60px 110px 29px 110px;
+    padding: 60px 0 29px 0;
   }
 }
 

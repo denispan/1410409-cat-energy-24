@@ -1,6 +1,12 @@
 .menu {
   display: flex;
   align-items: center;
+
+  &--index .menu__link {
+    @media (min-width: $desktop-width) {
+      color: $color-white;
+    }
+  }
 }
 
 .menu__item {

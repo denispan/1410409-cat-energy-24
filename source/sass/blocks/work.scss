@@ -30,13 +30,15 @@
 
 .work__item {
   position: relative;
+  display: flex;
   min-height: 60px;
-  padding-left: 80px;
   margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     padding: 151px 0 57px 0;
     margin-bottom: 0;
+    width: 230px;
+    min-height: 280px;
 
     &::after {
       content: counter(num);
@@ -56,15 +58,16 @@
   &:nth-child(n) {
     &::before {
       content: "";
-      position: absolute;
+      display: block;
       width: 60px;
       height: 60px;
       background-repeat: no-repeat;
       background-size: contain;
-      top: 0;
-      left: 0;
+      flex-shrink: 0;
+      margin-right: 20px;
 
       @media (min-width: $tablet-width) {
+        position: absolute;
         width: 80px;
         height: 80px;
         top: 40px;
@@ -108,8 +111,4 @@
 .work__text {
   margin: 0;
   max-width: 380px;
-
-  @media (min-width: $tablet-width) {
-    width: 250px;
-  }
 }
