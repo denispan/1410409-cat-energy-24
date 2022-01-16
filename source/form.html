@@ -44,7 +44,7 @@
 
       <section class="select-program">
         <div class="wrapper">
-          <h1 class="select-program__title">
+          <h1 class="page-title select-program__title">
             Подбор программы
           </h1>
           <p class="select-program__text">
@@ -53,58 +53,58 @@
 
           <form class="program-form" action="https://echo.htmlacademy.ru/" method="post">
 
-            <fieldset class="program-form__group program-form__group--main-info">
-              <legend class="visually-hidden">
-                Основная информация
-              </legend>
-              <ul class="program-form__list list-reset">
-                <li class="program-form__field text-field">
-                  <label class="text-field__label" for="main-info__name">
-                    Имя:*
-                  </label>
-                  <input class="text-field__input" id="main-info__name" name="main-info__name" type="text" placeholder="Барсик" required>
-                </li>
-                <li class="program-form__field text-field">
-                  <label class="text-field__label" for="main-info__weight">
-                    Вес (кг):*
-                  </label>
-                  <input class="text-field__input" id="main-info__weight" name="main-info__weight" type="text" placeholder="7" required>
-                </li>
-                <li class="program-form__field text-field">
-                  <label class="text-field__label" for="main-info__age">
-                    Возраст (лет):
-                  </label>
-                  <input class="text-field__input" id="main-info__age" name="main-info__age" type="text" placeholder="7">
-                </li>
-              </ul>
-            </fieldset>
-
-            <fieldset class="program-form__group program-form__group--program-type">
-              <legend class="visually-hidden">
-                Выбор типа программы
-              </legend>
-              <ul class="program-form__radio-list list-reset">
-                <li class="radio-control">
-                  <input class="radio-control__input" type="radio" name="program-type" id="weight-loss__input" value="weight-loss" checked>
-                  <label class="radio-control__label" for="weight-loss__input">
-                    Похудение
-                  </label>
-                </li>
-                <li class="radio-control">
-                  <input class="radio-control__input" type="radio" name="program-type" id="weight-gain__input" value="weight-gain">
-                  <label class="radio-control__label" for="weight-gain__input">
-                    Набор массы
-                  </label>
-                </li>
-                <li class="radio-control">
-                  <input class="radio-control__input" type="radio" name="program-type" id="need-advice__input" value="need-advice">
-                  <label class="radio-control__label" for="need-advice__input">
-                    Не знаю (Нужен ваш совет)
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
-
+            <div class="program-form__wrapper-main">
+              <fieldset class="program-form__group program-form__group--main-info">
+                <legend class="visually-hidden">
+                  Основная информация
+                </legend>
+                <ul class="program-form__list list-reset">
+                  <li class="program-form__field text-field">
+                    <label class="text-field__label" for="main-info__name">
+                      Имя:*
+                    </label>
+                    <input class="text-field__input" id="main-info__name" name="main-info__name" type="text" placeholder="Барсик" required>
+                  </li>
+                  <li class="program-form__field text-field">
+                    <label class="text-field__label" for="main-info__weight">
+                      Вес (кг):*
+                    </label>
+                    <input class="text-field__input" id="main-info__weight" name="main-info__weight" type="text" placeholder="7" required>
+                  </li>
+                  <li class="program-form__field text-field">
+                    <label class="text-field__label" for="main-info__age">
+                      Возраст (лет):
+                    </label>
+                    <input class="text-field__input" id="main-info__age" name="main-info__age" type="text" placeholder="7">
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset class="program-form__group program-form__group--program-type">
+                <legend class="visually-hidden">
+                  Выбор типа программы
+                </legend>
+                <ul class="program-form__radio-list list-reset">
+                  <li class="radio-control">
+                    <input class="radio-control__input visually-hidden" type="radio" name="program-type" id="weight-loss__input" value="weight-loss" checked>
+                    <label class="radio-control__label" for="weight-loss__input">
+                      Похудение
+                    </label>
+                  </li>
+                  <li class="radio-control">
+                    <input class="radio-control__input visually-hidden" type="radio" name="program-type" id="weight-gain__input" value="weight-gain">
+                    <label class="radio-control__label" for="weight-gain__input">
+                      Набор массы
+                    </label>
+                  </li>
+                  <li class="radio-control">
+                    <input class="radio-control__input visually-hidden" type="radio" name="program-type" id="need-advice__input" value="need-advice">
+                    <label class="radio-control__label" for="need-advice__input">
+                      Не знаю (Нужен ваш совет)
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+            </div>
             <fieldset class="program-form__group program-form__group--contacts">
               <h2 class="program-form__title program-form__title--contacts">
                 Контактные данные (владельца кота)
@@ -148,25 +148,25 @@
               </h2>
               <ul class="program-form__checkbox-list list-reset">
                 <li class="checkbox-control">
-                  <input class="checkbox-control__input" type="checkbox" name="additionally" id="sweetener" value="sweetener" checked>
+                  <input class="checkbox-control visually-hidden visually-hidden" type="checkbox" name="additionally" id="sweetener" value="sweetener" checked>
                   <label class="checkbox-control__label" for="sweetener">
                     Cахарозаменитель
                   </label>
                 </li>
                 <li class="checkbox-control">
-                  <input class="checkbox-control__input" type="checkbox" name="additionally" id="pure-water" value="pure-water">
+                  <input class="checkbox-control visually-hidden visually-hidden" type="checkbox" name="additionally" id="pure-water" value="pure-water">
                   <label class="checkbox-control__label" for="pure-water">
                     Питьевая вода
                   </label>
                 </li>
                 <li class="checkbox-control">
-                  <input class="checkbox-control__input" type="checkbox" name="additionally" id="milk" value="milk">
+                  <input class="checkbox-control visually-hidden visually-hidden" type="checkbox" name="additionally" id="milk" value="milk">
                   <label class="checkbox-control__label" for="milk">
                     Молоко
                   </label>
                 </li>
                 <li class="checkbox-control">
-                  <input class="checkbox-control__input" type="checkbox" name="additionally" id="vitamins" value="vitamins">
+                  <input class="checkbox-control visually-hidden visually-hidden" type="checkbox" name="additionally" id="vitamins" value="vitamins">
                   <label class="checkbox-control__label" for="vitamins">
                     Витамины
                   </label>
@@ -174,13 +174,16 @@
               </ul>
             </fieldset>
 
-            <button class="button button--primary" type="submit">
-              Отправить заявку
-            </button>
+            <div class="program-form__wrapper-button">
+              <button class="button button--primary program-form__button" type="submit">
+                Отправить заявку
+              </button>
 
-            <p class="program-form__legend">
-              * — Обязательные поля
-            </p>
+              <p class="program-form__legend">
+                * — Обязательные поля
+              </p>
+            </div>
+
           </form>
         </div>
       </section>
