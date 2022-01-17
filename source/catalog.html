@@ -51,9 +51,11 @@
 
           <ul class="catalog-list list-reset">
             <li class="catalog-list__item card">
-              <a href="#">
-                <img class="card__image" src="./img/catalog-1_chiken_500.png" alt="Cat Energy PRO 500 г">
-              </a>
+              <div class="card__image-wrapper">
+                <a href="#">
+                  <img class="card__image" src="./img/catalog-1_chiken_500.png" alt="Cat Energy PRO 500 г">
+                </a>
+              </div>
               <h3 class="card__title">
                 <a class="link" href="#">
                   Cat Energy PRO 500 г
@@ -73,7 +75,36 @@
                   <p class="description__value">700 р.</p>
                 </li>
               </ul>
-              <a class="button button--primary" href="#">
+              <a class="button button--primary card__button" href="#">
+                Заказать
+              </a>
+            </li>
+            <li class="catalog-list__item card">
+              <div class="card__image-wrapper">
+                <a href="#">
+                  <img class="card__image" src="./img/catalog-2_chiken_1000.png" alt="Cat Energy PRO 1000 г">
+                </a>
+              </div>
+              <h3 class="card__title">
+                <a class="link" href="#">
+                  Cat Energy PRO 1000 г
+                </a>
+              </h3>
+              <ul class="card__description-list list-reset">
+                <li class="card__description description">
+                  <p class="description__property">Масса</p>
+                  <p class="description__value">1000 г</p>
+                </li>
+                <li class="card__description description">
+                  <p class="description__property">Вкус</p>
+                  <p class="description__value">Курица</p>
+                </li>
+                <li class="card__description description">
+                  <p class="description__property">Цена</p>
+                  <p class="description__value">1000 р.</p>
+                </li>
+              </ul>
+              <a class="button button--primary card__button" href="#">
                 Заказать
               </a>
             </li>
@@ -93,61 +124,54 @@
       </section>
 
       <section class="catalog-additional">
-        <div class="wrapper">
+        <div class="wrapper catalog-additional__wrapper">
           <h2 class="catalog-additional__title">
             Дополнительные товары
           </h2>
           <ul class="catalog-additional__list extra-goods list-reset">
             <li class="extra-goods__item">
-              <div class="extra-goods__description">
-                <span class="extra-goods__name">
-                  Сахарозаменитель
-                </span>
-                <span class="extra-goods__quantity">
-                  1 упаковка (100 г)
-                </span>
-                <span class="extra-goods__price">
-                  200 р.
-                </span>
-              </div>
-              <a class="button button--primary" href="#">
+              <span class="extra-goods__name">
+                Сахарозаменитель
+              </span>
+              <span class="extra-goods__quantity">
+                1 упаковка (100 г)
+              </span>
+              <span class="extra-goods__price">
+                200 р.
+              </span>
+              <a class="button button--primary extra-goods__button" href="#">
                 Заказать
               </a>
             </li>
             <li class="extra-goods__item">
-              <div class="extra-goods__description">
-                <span class="extra-goods__name">
-                  Питьевая вода
-                </span>
-                <span class="extra-goods__quantity">
-                  5 литров
-                </span>
-                <span class="extra-goods__price">
-                  50 р.
-                </span>
-              </div>
-              <a class="button button--primary" href="#">
+              <span class="extra-goods__name">
+                Питьевая вода
+              </span>
+              <span class="extra-goods__quantity">
+                5 литров
+              </span>
+              <span class="extra-goods__price">
+                50 р.
+              </span>
+              <a class="button button--primary extra-goods__button" href="#">
                 Заказать
               </a>
             </li>
             <li class="extra-goods__item">
-              <div class="extra-goods__description">
-                <span class="extra-goods__name">
-                  Молоко
-                </span>
-                <span class="extra-goods__quantity">
-                  1 литр
-                </span>
-                <span class="extra-goods__price">
-                  100 р.
-                </span>
-              </div>
-              <a class="button button--primary" href="#">
+              <span class="extra-goods__name">
+                Молоко
+              </span>
+              <span class="extra-goods__quantity">
+                1 литр
+              </span>
+              <span class="extra-goods__price">
+                100 р.
+              </span>
+              <a class="button button--primary extra-goods__button" href="#">
                 Заказать
               </a>
             </li>
             <li class="extra-goods__item">
-              <div class="extra-goods__description">
                 <span class="extra-goods__name">
                   Витамины
                 </span>
@@ -157,14 +181,13 @@
                 <span class="extra-goods__price">
                   300 р.
                 </span>
-              </div>
-              <a class="button button--primary" href="#">
+              <a class="button button--primary extra-goods__button" href="#">
                 Заказать
               </a>
             </li>
           </ul>
 
-          <div class="offer">
+          <div class="offer catalog-additional__offer">
               <p class="offer__text">
                 Закажите все и получите чехол для кота в подарок!
               </p>
