@@ -9,6 +9,7 @@
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
+    margin-top: 65px;
     margin-bottom: 54px;
   }
 
@@ -25,10 +26,12 @@
   color: $color-black;
   text-transform: uppercase;
   margin: 0 0 39px 0;
+  width: 226px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
     margin-bottom: 66px;
+    width: 323px;
   }
 }

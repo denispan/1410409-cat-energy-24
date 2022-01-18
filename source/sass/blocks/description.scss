@@ -1,3 +1,9 @@
+.description {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .description__property,
 .description__value {
   font-size: 12px;

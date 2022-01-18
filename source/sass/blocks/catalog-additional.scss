@@ -20,19 +20,45 @@
   line-height: 24px;
   font-weight: 400;
   color: $color-black;
-  margin: 0;
+  margin: 0 0 49px 0;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
-    margin-bottom: 80px;
+    margin-bottom: 106px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / -1;
   }
 }
 
 .catalog-additional__list {
-  margin-bottom: 35px;
+  margin-bottom: 54px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 69px;
+    flex-grow: 2;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+    grid-column: 1 / 4;
+    width: 100%;
+  }
+}
+
+.catalog-additional__wrapper {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    column-gap: 80px;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.catalog-additional__offer {
+  @media (min-width: $desktop-width) {
+    grid-column: 4 / 5;
+    align-self: center;
   }
 }
