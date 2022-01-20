@@ -9,12 +9,13 @@
 }
 
 .parameters-list__item {
-  position: relative;
   display: flex;
   flex-direction: column;
-  width: 124px;
+  align-items: center;
+  min-width: 124px;
   border: 1px solid $color-grey-8;
   border-radius: 3px;
+  padding: 15px 15px 0 15px;
 }
 
 .parameters-list__value {
@@ -24,7 +25,6 @@
   font-weight: 400;
   text-transform: uppercase;
   margin-bottom: 8px;
-  padding-bottom: 18px;
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
@@ -33,21 +33,24 @@
 }
 
 .parameters-list__text {
-  position: absolute;
-  top: 38px;
-  left: 25px;
-  width: 77px;
-  font-family: $font-default;
   font-size: 12px;
   line-height: 12px;
   font-weight: 400;
-  margin: 0 auto;
   text-transform: lowercase;
   background-color: $color-grey-7;
+  padding: 0 5px;
+  margin-bottom: -8px;
+  width: 85px;
 
   @media (min-width: $tablet-width) {
     font-size: 14px;
     line-height: 14px;
     background-color: $color-white;
+    width: auto;
+    margin-bottom: -8px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $color-grey-7;
   }
 }
