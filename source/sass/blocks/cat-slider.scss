@@ -20,14 +20,15 @@
 .cat-slider__controls {
   display: flex;
   justify-content: center;
+  align-items: center;
+  margin-top: 15px;
 }
 
 .cat-slider__button {
-  font-family: $font-custom;
+  width: fit-content;
+  padding: 0;
   font-size: 16px;
   line-height: 20px;
-  font-weight: 400;
-  color: $color-black;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;

@@ -1,0 +1,54 @@
+.scale {
+  position: relative;
+  width: 86px;
+  height: 14px;
+  background-color: $color-white;
+  border: 1px solid $color-grey-8;
+  border-radius: 6px;
+  margin: 0 13px;
+
+  @media (min-width: $tablet-width) {
+    width: 426px;
+    height: 6px;
+    border: none;
+    background-color: $color-grey-10;
+  }
+}
+
+.scale__button {
+  position: absolute;
+  width: 36px;
+  height: 6px;
+  background-color: $color-green-1;
+  border-radius: 6px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 6px;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    width: 34px;
+    height: 34px;
+    border: 1px solid $color-grey-8;
+    border-radius: 50%;
+    background-color: $color-white;
+    left: 50%;
+    box-shadow: 0 1px 3px lighten($color-black, 84%);
+    //Effect: Drop shadow
+    //Radius: 3px
+    //Offset: 0px, 1px
+    //rgba(0, 0, 0, 0.16)
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: $color-green-1;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
