@@ -7,25 +7,73 @@
 }
 
 .program-cards__item {
-  padding: 30px 33px 20px 20px;
+  position: relative;
+  padding: 30px 33px 0 20px;
   margin-bottom: 20px;
   background-color: $color-grey-2;
 
   &--slim::before {
     content: "";
+    position: absolute;
+    top: 21px;
+    left: 22px;
     width: 50px;
     height: 53px;
-    background-image: url(".//img/cat-slim.svg");
+    background-image: url("../img/cat-slim.svg");
+    background-size: cover;
+  }
+
+  &--pro::before {
+    content: "";
+    position: absolute;
+    top: 24px;
+    left: 13px;
+    width: 67px;
+    height: 50px;
+    background-image: url("../img/cat-fat.svg");
+    background-size: cover;
   }
 
   @media (min-width: $tablet-width) {
-    padding: 77px 52px 57px 52px;
+    padding: 77px 280px 42px 52px;
     margin-bottom: 30px;
+
+    &--slim::before {
+      top: 81px;
+      right: 62px;
+      left: auto;
+      width: 200px;
+      height: 211px;
+    }
+
+    &--pro::before {
+      top: 91px;
+      right: 28px;
+      left: auto;
+      width: 268px;
+      height: 200px;
+    }
   }
 
   @media (min-width: $desktop-width) {
-    padding: 77px 50px 59px 51px;
+    padding: 77px 52px 40px 51px;
     margin-bottom: 0;
+
+    &--slim::before {
+      top: 41px;
+      left: 52px;
+      right: auto;
+      width: 100px;
+      height: 106px;
+    }
+
+    &--pro::before {
+      top: 47px;
+      left: 33px;
+      right: auto;
+      width: 134px;
+      height: 100px;
+    }
   }
 
   &:last-child {
@@ -47,6 +95,7 @@
     line-height: 36px;
     margin-left: 0;
     margin-bottom: 24px;
+    flex-grow: 1;
   }
 
   @media (min-width: $desktop-width) {
@@ -56,28 +105,56 @@
 }
 
 .program-cards__text {
-  margin: 0 0 42px 0;
+  margin: 0 0 23px 0;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 52px;
+    min-width: 345px;
+    margin-bottom: 33px;
     color: $color-black;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 27px;
+    width: auto;
+    margin-bottom: 8px;
   }
 }
 
 .program-cards__button {
-  padding: 0;
-  width: 135px;
+  padding: 15px 0;
   justify-content: start;
+
+  &:active {
+    opacity: 30%;
+  }
+
+  @media (max-width: $mobile-only-width) {
+    border-top: 1px solid $color-grey-3;
+  }
 
   @media (min-width: $tablet-width) {
     width: 165px;
+    align-self: flex-end;
   }
 
   @media (min-width: $desktop-width) {
     width: 168px;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 12px;
+    background-image: url("../img/button-arrow.svg");
+    align-self: center;
+    margin-left: 15px;
+
+    @media (min-width: $tablet-width) {
+      margin-left: 25px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-left: 28px;
+    }
   }
 }

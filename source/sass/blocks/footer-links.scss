@@ -12,6 +12,39 @@
   }
 }
 
+.footer-links__item--logo {
+  padding: 39px 0 32px 0;
+}
+
+.footer-links__item--social {
+  padding: 20px 0;
+
+  @media (max-width: $mobile-only-width) {
+    border-top: 1px solid $color-grey-3;
+    border-bottom: 1px solid $color-grey-3;
+  }
+}
+
+.footer-links__item--copyright {
+  padding: 22px 0;
+}
+
 .footer-links__item {
-  padding: 39px 10px 32px 10px;
+  @media (min-width: $tablet-width) {
+    padding: 57px 56px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 59px 56px;
+  }
+}
+
+.footer-links__logo {
+  &:hover {
+    opacity: 80%;
+  }
+
+  &:active {
+    opacity: 60%;
+  }
 }

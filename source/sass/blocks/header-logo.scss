@@ -2,6 +2,14 @@
   display: flex;
   align-items: center;
   margin-right: 10px;
+
+  &:hover {
+    opacity: 80%;
+  }
+
+  &:active {
+    opacity: 60%;
+  }
 }
 
 .header-logo__image {

@@ -8,7 +8,7 @@
   </head>
   <body class="page__body">
 
-    <header class="page__header header">
+    <header class="page__header header header--menu-closed header--menu-nojs">
       <div class="wrapper header__wrapper">
         <a class="header-logo" href="index.html">
           <img class="header-logo__image" src="./img/logo-mobile.png" width="34" height="38" alt="Магазин">
@@ -16,10 +16,9 @@
         </a>
         <button class="button header__toggle" type="button">
           <span class="visually-hidden">Открыть/закрыть меню</span>
-          <img src="./img/button-menu.svg" width="24" height="16" alt="Открыть/закрыть">
         </button>
         <nav class="header__nav main-nav">
-          <ul class="main-nav__list menu list-reset">
+          <ul class="header__nav-list menu list-reset">
             <li class="menu__item">
               <a class="menu__link" href="index.html">
                 Главная
@@ -400,7 +399,10 @@
           </ul>
         </div>
       </section>
+
     </footer>
+
+    <script src="./js/menu-toggle.js"></script>
 
   </body>
 </html>
