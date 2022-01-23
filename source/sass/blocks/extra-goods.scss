@@ -19,14 +19,13 @@
 
 .extra-goods__quantity,
 .extra-goods__price {
-  font-family: $font-default;
   font-size: 14px;
   line-height: 14px;
   font-weight: 400;
   color: $color-grey-5;
 
   @media (min-width: $tablet-width) {
-    font-size: 20px;
+    font-size: 16px;
     line-height: 20px;
   }
 }

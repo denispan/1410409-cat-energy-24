@@ -8,7 +8,7 @@
   </head>
   <body class="page__body">
 
-    <header class="page__header header">
+    <header class="page__header header header--menu-closed header--menu-nojs">
       <div class="wrapper header__wrapper">
         <a class="header-logo" href="index.html">
           <img class="header-logo__image" src="./img/logo-mobile.png" width="34" height="38" alt="Магазин">
@@ -16,10 +16,9 @@
         </a>
         <button class="button header__toggle" type="button">
           <span class="visually-hidden">Открыть/закрыть меню</span>
-          <img src="./img/button-menu.svg" width="24" height="16" alt="Открыть/закрыть">
         </button>
         <nav class="header__nav main-nav">
-          <ul class="main-nav__list menu list-reset">
+          <ul class="header__nav-list menu list-reset">
             <li class="menu__item">
               <a class="menu__link" href="index.html">
                 Главная
@@ -53,7 +52,7 @@
             <li class="catalog-list__item card">
               <div class="card__image-wrapper">
                 <a href="#">
-                  <img class="card__image" src="./img/catalog-1_chiken_500.png" alt="Cat Energy PRO 500 г">
+                  <img class="card__image" src="img/catalog-1_chicken_500.png" alt="Cat Energy PRO 500 г">
                 </a>
               </div>
               <h3 class="card__title">
@@ -75,14 +74,14 @@
                   <p class="description__value">700 р.</p>
                 </li>
               </ul>
-              <a class="button button--primary card__button" href="#">
+              <a class="button button--secondary card__button" href="#">
                 Заказать
               </a>
             </li>
             <li class="catalog-list__item card">
               <div class="card__image-wrapper">
                 <a href="#">
-                  <img class="card__image" src="./img/catalog-2_chiken_1000.png" alt="Cat Energy PRO 1000 г">
+                  <img class="card__image" src="img/catalog-2_chicken_1000.png" alt="Cat Energy PRO 1000 г">
                 </a>
               </div>
               <h3 class="card__title">
@@ -104,7 +103,149 @@
                   <p class="description__value">1000 р.</p>
                 </li>
               </ul>
-              <a class="button button--primary card__button" href="#">
+              <a class="button button--secondary card__button" href="#">
+                Заказать
+              </a>
+            </li>
+            <li class="catalog-list__item card">
+              <div class="card__image-wrapper">
+                <a href="#">
+                  <img class="card__image" src="./img/catalog-3_fish_500.png" alt="Cat Energy PRO 1000 г">
+                </a>
+              </div>
+              <h3 class="card__title">
+                <a class="link" href="#">
+                  Cat Energy PRO 500 г
+                </a>
+              </h3>
+              <ul class="card__description-list list-reset">
+                <li class="card__description description">
+                  <p class="description__property">Масса</p>
+                  <p class="description__value">500 г</p>
+                </li>
+                <li class="card__description description">
+                  <p class="description__property">Вкус</p>
+                  <p class="description__value">Рыба</p>
+                </li>
+                <li class="card__description description">
+                  <p class="description__property">Цена</p>
+                  <p class="description__value">700 р.</p>
+                </li>
+              </ul>
+              <a class="button button--secondary card__button" href="#">
+                Заказать
+              </a>
+            <li class="catalog-list__item card">
+              <div class="card__image-wrapper">
+                <a href="#">
+                  <img class="card__image" src="./img/catalog-4_fish_1000.png" alt="Cat Energy PRO 1000 г">
+                </a>
+              </div>
+              <h3 class="card__title">
+                <a class="link" href="#">
+                  Cat Energy PRO 1000 г
+                </a>
+              </h3>
+              <ul class="card__description-list list-reset">
+                <li class="card__description description">
+                  <p class="description__property">Масса</p>
+                  <p class="description__value">1000 г</p>
+                </li>
+                <li class="card__description description">
+                  <p class="description__property">Вкус</p>
+                  <p class="description__value">Рыба</p>
+                </li>
+                <li class="card__description description">
+                  <p class="description__property">Цена</p>
+                  <p class="description__value">1000 р.</p>
+                </li>
+              </ul>
+              <a class="button button--secondary card__button" href="#">
+                Заказать
+              </a>
+            </li>
+            <li class="catalog-list__item card">
+              <div class="card__image-wrapper">
+                <a href="#">
+                  <img class="card__image" src="./img/catalog-5-buckwheat_500.png" alt="Cat Energy PRO 1000 г">
+                </a>
+              </div>
+              <h3 class="card__title">
+                <a class="link" href="#">
+                  Cat Energy SLIM 500 г
+                </a>
+              </h3>
+              <ul class="card__description-list list-reset">
+                <li class="card__description description">
+                  <p class="description__property">Масса</p>
+                  <p class="description__value">500 г</p>
+                </li>
+                <li class="card__description description">
+                  <p class="description__property">Вкус</p>
+                  <p class="description__value">Гречка</p>
+                </li>
+                <li class="card__description description">
+                  <p class="description__property">Цена</p>
+                  <p class="description__value">400 р.</p>
+                </li>
+              </ul>
+              <a class="button button--secondary card__button" href="#">
+                Заказать
+              </a>
+            <li class="catalog-list__item card">
+              <div class="card__image-wrapper">
+                <a href="#">
+                  <img class="card__image" src="img/catalog-6-buckwheat_1000.png" alt="Cat Energy PRO 1000 г">
+                </a>
+              </div>
+              <h3 class="card__title">
+                <a class="link" href="#">
+                  Cat Energy SLIM 1000 г
+                </a>
+              </h3>
+              <ul class="card__description-list list-reset">
+                <li class="card__description description">
+                  <p class="description__property">Масса</p>
+                  <p class="description__value">1000 г</p>
+                </li>
+                <li class="card__description description">
+                  <p class="description__property">Вкус</p>
+                  <p class="description__value">Гречка</p>
+                </li>
+                <li class="card__description description">
+                  <p class="description__property">Цена</p>
+                  <p class="description__value">700 р.</p>
+                </li>
+              </ul>
+              <a class="button button--secondary card__button" href="#">
+                Заказать
+              </a>
+            <li class="catalog-list__item card">
+              <div class="card__image-wrapper">
+                <a href="#">
+                  <img class="card__image" src="img/catalog-7-rice_500.png" alt="Cat Energy PRO 1000 г">
+                </a>
+              </div>
+              <h3 class="card__title">
+                <a class="link" href="#">
+                  Cat Energy SLIM 500 г
+                </a>
+              </h3>
+              <ul class="card__description-list list-reset">
+                <li class="card__description description">
+                  <p class="description__property">Масса</p>
+                  <p class="description__value">500 г</p>
+                </li>
+                <li class="card__description description">
+                  <p class="description__property">Вкус</p>
+                  <p class="description__value">Рис</p>
+                </li>
+                <li class="card__description description">
+                  <p class="description__property">Цена</p>
+                  <p class="description__value">500 р.</p>
+                </li>
+              </ul>
+              <a class="button button--secondary card__button" href="#">
                 Заказать
               </a>
             </li>
@@ -115,7 +256,7 @@
               <p class="card__description">
                 На самом деле вкусов гораздо больше!
               </p>
-              <a class="button button--secondary" href="#">
+              <a class="button button--secondary card__button--more" href="#">
                 Показать все
               </a>
             </li>
@@ -139,7 +280,7 @@
               <span class="extra-goods__price">
                 200 р.
               </span>
-              <a class="button button--primary extra-goods__button" href="#">
+              <a class="button button--secondary extra-goods__button" href="#">
                 Заказать
               </a>
             </li>
@@ -153,7 +294,7 @@
               <span class="extra-goods__price">
                 50 р.
               </span>
-              <a class="button button--primary extra-goods__button" href="#">
+              <a class="button button--secondary extra-goods__button" href="#">
                 Заказать
               </a>
             </li>
@@ -167,7 +308,7 @@
               <span class="extra-goods__price">
                 100 р.
               </span>
-              <a class="button button--primary extra-goods__button" href="#">
+              <a class="button button--secondary extra-goods__button" href="#">
                 Заказать
               </a>
             </li>
@@ -181,7 +322,7 @@
                 <span class="extra-goods__price">
                   300 р.
                 </span>
-              <a class="button button--primary extra-goods__button" href="#">
+              <a class="button button--secondary extra-goods__button" href="#">
                 Заказать
               </a>
             </li>
@@ -258,7 +399,10 @@
           </ul>
         </div>
       </section>
+
     </footer>
+
+    <script src="./js/menu-toggle.js"></script>
 
   </body>
 </html>

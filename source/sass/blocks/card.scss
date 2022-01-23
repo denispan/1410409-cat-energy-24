@@ -7,17 +7,27 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
-    padding: 37px 39px;
-    background-color: $color-grey-2;
+    padding: 8px 39px 37px 39px;
+    background: linear-gradient($color-white 81px, $color-grey-2 81px);
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 1px;
   }
 
   &--more {
     display: block;
 
     @media (min-width: $tablet-width) {
+      background: none;
       background-color: transparent;
-      padding: 37px 37px;
       border: 2px solid $color-grey-2;
+      padding: 0 36px 37px 36px;
+    }
+
+    @media (min-width: $desktop-width) {
+      min-height: 431px;
+      align-self: flex-end;
     }
 
     & .card__title {
@@ -39,7 +49,7 @@
     & .card__description {
       text-align: center;
       margin-bottom: 21px;
-      font-family: $font-custom;
+      font-family: $font-default;
       font-size: 12px;
       line-height: 16px;
       font-weight: 400;
@@ -63,6 +73,12 @@
   @media (min-width: $tablet-width) {
     height: 206px;
     align-items: end;
+    margin-bottom: 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 202px;
+    margin-bottom: 40px;
   }
 }
 
@@ -108,5 +124,10 @@
 
   @media (min-width: $tablet-width) {
     margin-top: auto;
+  }
+
+  &--more {
+    background-color: $color-grey-2;
+    color: $color-grey-5;
   }
 }
