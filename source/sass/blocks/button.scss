@@ -39,5 +39,13 @@
     font-size: 16px;
     line-height: 20px;
     padding: 10px;
+
+    &:hover {
+      background-color: $color-green-4;
+    }
+
+    &:active {
+      color: rgba($color-white, 0.3);
+    }
   }
 }

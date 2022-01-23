@@ -1,11 +1,12 @@
 .checkbox-control {
-  margin-bottom: 13px;
+  position: relative;
+  margin-bottom: 25px;
 
-  @media (min-width: $tablet-width) {
+  &:last-child {
     margin-bottom: 0;
   }
 
-  &:last-child {
+  @media (min-width: $tablet-width) {
     margin-bottom: 0;
   }
 }
@@ -17,9 +18,53 @@
   font-weight: 400;
   color: $color-black;
   text-transform: uppercase;
+  padding-left: 44px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    padding-left: 49px;
+  }
+}
+
+.checkbox-control__input:disabled + .checkbox-control__label {
+  opacity: 30%;
+}
+
+.checkbox-control__input + label::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border: 1px solid $color-grey-8;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.checkbox-control__input + label:hover::before {
+  border-color: $color-grey-12;
+}
+
+.checkbox-control__input:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 6px;
+  width: 18px;
+  height: 14px;
+  background-image: url("../img/checkbox.svg");
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    width: 24px;
+    height: 19px;
+    left: 10px;
   }
 }

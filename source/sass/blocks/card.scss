@@ -31,11 +31,33 @@
     }
 
     & .card__title {
+      position: relative;
       width: auto;
       text-align: center;
       margin-bottom: 8px;
       color: $color-grey-9;
       text-transform: uppercase;
+
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        width: 30px;
+        height: 2px;
+        background-color: $color-grey-13;
+        top: -50px;
+        left: 50%;
+        transform: translateX(-50%);
+
+        @media (min-width: $tablet-width) {
+          top: -75px;
+          width: 60px;
+        }
+      }
+
+      &::before {
+        transform: translateX(-50%) rotate(90deg);
+      }
 
       @media (min-width: $tablet-width) {
         font-size: 20px;
