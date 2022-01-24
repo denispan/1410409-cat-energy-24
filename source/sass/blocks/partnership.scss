@@ -14,9 +14,11 @@
   }
 }
 
-.partnership .wrapper {
+.partnership__wrapper {
   @media (min-width: $desktop-width) {
     padding-top: 95px;
+    position: relative;
+    z-index: 1;
   }
 }
 

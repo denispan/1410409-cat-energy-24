@@ -16,13 +16,17 @@
   }
 
   &--more {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
 
     @media (min-width: $tablet-width) {
+      justify-content: flex-end;
       background: none;
       background-color: transparent;
       border: 2px solid $color-grey-2;
       padding: 0 36px 37px 36px;
+      margin: 80px 0 0 0;
     }
 
     @media (min-width: $desktop-width) {
@@ -38,27 +42,6 @@
       color: $color-grey-9;
       text-transform: uppercase;
 
-      &::before,
-      &::after {
-        content: "";
-        position: absolute;
-        width: 30px;
-        height: 2px;
-        background-color: $color-grey-13;
-        top: -50px;
-        left: 50%;
-        transform: translateX(-50%);
-
-        @media (min-width: $tablet-width) {
-          top: -75px;
-          width: 60px;
-        }
-      }
-
-      &::before {
-        transform: translateX(-50%) rotate(90deg);
-      }
-
       @media (min-width: $tablet-width) {
         font-size: 20px;
         line-height: 22px;
@@ -66,6 +49,27 @@
         margin-top: 161px;
         margin-bottom: 23px;
       }
+    }
+
+    & .card__title::before,
+    & .card__title::after {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 2px;
+      background-color: $color-grey-13;
+      top: -35px;
+      left: 50%;
+      transform: translateX(-50%);
+
+      @media (min-width: $tablet-width) {
+        top: -75px;
+        width: 60px;
+      }
+    }
+
+    & .card__title::before {
+      transform: translateX(-50%) rotate(90deg);
     }
 
     & .card__description {
@@ -132,12 +136,6 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 42px;
-  }
-}
-
-.card__description {
-  @media (min-width: $tablet-width) {
-    margin-bottom: 16px;
   }
 }
 

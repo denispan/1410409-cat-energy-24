@@ -60,10 +60,15 @@
 .extra-goods__item {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 32px;
+  padding: 12px 0 19px 0;
+  border-top: 1px solid $color-grey-8;
 
   &:last-child {
-    margin-bottom: 0;
+    border-bottom: 1px solid $color-grey-8;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 26px 0 28px 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -75,11 +80,6 @@
 
 .extra-goods__button {
   margin-top: 15px;
-
-  @media (min-width: $tablet-width) {
-    margin-top: 25px;
-    margin-bottom: 54px;
-  }
 
   @media (min-width: $desktop-width) {
     margin: 0;
