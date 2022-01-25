@@ -1,5 +1,5 @@
-var header = document.querySelector('.header');
-var navToggle = document.querySelector('.header__toggle');
+const header = document.querySelector('.header');
+const navToggle = document.querySelector('.header__toggle');
 
 header.classList.remove('header--menu-nojs');
 

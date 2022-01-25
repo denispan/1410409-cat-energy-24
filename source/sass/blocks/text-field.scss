@@ -31,9 +31,18 @@
   margin-left: 15px;
   outline: none;
 
-  @media (min-width: $tablet-width) {
-    font-size: 20px;
-    line-height: 30px;
+  &--mail {
+    padding-right: 40px;
+    background-image: url("../img/input-mail.svg");
+    background-repeat: no-repeat;
+    background-position: top 50% right 17px;
+  }
+
+  &--phone {
+    padding-right: 40px;
+    background-image: url("../img/input-phone.svg");
+    background-repeat: no-repeat;
+    background-position: top 50% right 13px;
   }
 
   &::placeholder {
@@ -43,5 +52,24 @@
   &--textarea {
     margin-left: 0;
     resize: none;
+  }
+
+  &:hover {
+    border-color: $color-grey-8;
+  }
+
+  &:focus {
+    border: 1px solid $color-black;
+    outline: 1px solid $color-black;
+  }
+
+  &--error {
+    outline: 1px solid $color-red-1;
+    border: 1px solid $color-red-1;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
   }
 }

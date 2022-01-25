@@ -29,6 +29,7 @@
   }
 
   &--program-type {
+    position: relative;
     padding: 22px 0 19px 0;
 
     @media (min-width: $tablet-width) {
@@ -39,6 +40,26 @@
     @media (min-width: $desktop-width) {
       width: calc(50% - 40px);
       padding-bottom: 0;
+    }
+  }
+
+  @media (max-width: $mobile-only-width) {
+    &--program-type::before,
+    &--program-type::after {
+      position: absolute;
+      content: "";
+      width: 100vw;
+      height: 1px;
+      background-color: $color-grey-3;
+      margin-left: -20px;
+    }
+
+    &--program-type::before {
+      top: 0;
+    }
+
+    &--program-type::after {
+      bottom: 0;
     }
   }
 

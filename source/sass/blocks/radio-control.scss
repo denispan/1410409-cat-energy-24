@@ -1,5 +1,6 @@
 .radio-control {
-  margin-bottom: 13px;
+  position: relative;
+  margin-bottom: 25px;
 
   &:last-child {
     margin-bottom: 0;
@@ -11,11 +12,56 @@
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
+  padding-left: 45px;
   color: $color-grey-6;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    padding-left: 60px;
+  }
+}
+
+.radio-control__input:disabled + .radio-control__label {
+  opacity: 30%;
+}
+
+.radio-control__input + label::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border: 1px solid $color-grey-8;
+  border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.radio-control__input + label:hover::before {
+  border-color: $color-grey-12;
+}
+
+.radio-control__input:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 8px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background-color: $color-green-1;
+
+  @media (min-width: $tablet-width) {
+    width: 18px;
+    height: 18px;
+    left: 11px;
   }
 }
