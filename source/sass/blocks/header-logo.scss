@@ -3,12 +3,13 @@
   align-items: center;
   margin-right: 10px;
 
-  &:hover {
-    opacity: 80%;
+  &:hover,
+  &:focus {
+    opacity: 0.8;
   }
 
   &:active {
-    opacity: 60%;
+    opacity: 0.6;
   }
 }
 

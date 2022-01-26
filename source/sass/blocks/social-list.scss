@@ -24,11 +24,12 @@
 .social-list__link svg {
   fill: $color-grey-4;
 
-  &:hover {
+  &:hover,
+  &:focus {
     fill: $color-green-1;
   }
 
   &:active {
-    opacity: 30%;
+    opacity: 0.3;
   }
 }

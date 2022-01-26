@@ -40,11 +40,12 @@
 }
 
 .footer-links__logo {
-  &:hover {
-    opacity: 80%;
+  &:hover,
+  &:focus {
+    opacity: 0.8;
   }
 
   &:active {
-    opacity: 60%;
+    opacity: 0.6;
   }
 }

@@ -34,7 +34,7 @@
       align-self: flex-end;
     }
 
-    & .card__title {
+    .card__title {
       position: relative;
       width: auto;
       text-align: center;
@@ -51,8 +51,8 @@
       }
     }
 
-    & .card__title::before,
-    & .card__title::after {
+    .card__title::before,
+    .card__title::after {
       content: "";
       position: absolute;
       width: 30px;
@@ -68,11 +68,11 @@
       }
     }
 
-    & .card__title::before {
+    .card__title::before {
       transform: translateX(-50%) rotate(90deg);
     }
 
-    & .card__description {
+    .card__description {
       text-align: center;
       margin-bottom: 21px;
       font-family: $font-default;
@@ -149,5 +149,14 @@
   &--more {
     background-color: $color-grey-2;
     color: $color-grey-5;
+
+    &:hover,
+    &:focus {
+      background-color: $color-grey-14;
+    }
+
+    &:active {
+      color: rgba($color-grey-5, 0.3);
+    }
   }
 }
