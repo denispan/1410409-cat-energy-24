@@ -1,6 +1,4 @@
 .header-logo {
-  display: flex;
-  align-items: center;
   margin-right: 10px;
 
   &:hover,
@@ -14,9 +12,18 @@
 }
 
 .header-logo__image {
+  width: 191px;
+  height: 38px;
   margin-right: 56px;
 
   @media (min-width: $tablet-width) {
+    width: 174px;
+    height: 52px;
     margin-right: 12px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 202px;
+    height: 59px;
   }
 }
