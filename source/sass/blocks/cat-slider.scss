@@ -1,4 +1,5 @@
-.cat-slider__image {
+.cat-slider__wrapper {
+  position: relative;
   margin: 0 auto;
   width: 280px;
   height: 232px;
@@ -9,12 +10,14 @@
   }
 }
 
-.cat-slider__image--before {
+.cat-slider__image {
   object-fit: fill;
 }
 
 .cat-slider__image--after {
-  display: none;
+  position: absolute;
+  left: 20px;
+  top: 0;
 }
 
 .cat-slider__controls {
