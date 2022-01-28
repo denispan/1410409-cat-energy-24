@@ -25,7 +25,8 @@
   transform: translateY(-50%);
   left: 6px;
 
-  &:hover {
+  &:hover,
+  &:focus {
     box-shadow: 0 2px 4px rgba($color-black, 0.19);
   }
 

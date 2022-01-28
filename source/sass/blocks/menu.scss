@@ -59,12 +59,13 @@
   color: $color-black;
   text-transform: uppercase;
 
-  &:hover {
-    opacity: 60%;
+  &:hover,
+  &:focus {
+    opacity: 0.6;
   }
 
   &:active {
-    opacity: 30%;
+    opacity: 0.3;
   }
 
   @media (min-width: $tablet-width) {

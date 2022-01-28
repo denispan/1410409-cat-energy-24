@@ -24,14 +24,13 @@
 }
 
 .radio-control__input:disabled + .radio-control__label {
-  opacity: 30%;
+  opacity: 0.3;
 }
 
 .radio-control__input + label::before {
   content: "";
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  top: -3px;
   left: 0;
   width: 30px;
   height: 30px;
@@ -44,8 +43,14 @@
   }
 }
 
-.radio-control__input + label:hover::before {
+.radio-control__input + label:hover::before,
+.radio-control__input + label:focus::before {
   border-color: $color-grey-12;
+}
+
+.radio-control__input + label:active,
+.radio-control__input + label:active::before {
+  opacity: 0.3;
 }
 
 .radio-control__input:checked + label::after {

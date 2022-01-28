@@ -1,4 +1,5 @@
 .text-field {
+  position: relative;
   display: flex;
   width: 100%;
   align-items: center;
@@ -31,18 +32,15 @@
   margin-left: 15px;
   outline: none;
 
-  &--mail {
-    padding-right: 40px;
-    background-image: url("../img/input-mail.svg");
-    background-repeat: no-repeat;
-    background-position: top 50% right 17px;
+  &--iconed {
+    padding-right: 50px;
   }
 
-  &--phone {
-    padding-right: 40px;
-    background-image: url("../img/input-phone.svg");
-    background-repeat: no-repeat;
-    background-position: top 50% right 13px;
+  &--iconed + svg {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
   }
 
   &::placeholder {
@@ -54,7 +52,8 @@
     resize: none;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     border-color: $color-grey-8;
   }
 

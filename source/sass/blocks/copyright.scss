@@ -4,7 +4,7 @@
   justify-content: center;
 
   &:active {
-    opacity: 30%;
+    opacity: 0.3;
   }
 }
 
@@ -13,12 +13,13 @@
   height: 34px;
   fill: $color-grey-4;
 
-  &:hover {
+  &:hover,
+  &:focus {
     fill: $color-green-1;
   }
 
   &:active {
-    opacity: 30%;
+    opacity: 0.3;
   }
 }
 

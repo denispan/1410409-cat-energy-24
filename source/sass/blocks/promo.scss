@@ -3,6 +3,12 @@
   background: url("../img/bg_promo_cat_mob.jpg") top center no-repeat,
     linear-gradient($color-green-3 302px, $color-white 302px);
 
+  @media (min-resolution: 2dppx) {
+    background: url("../img/bg_promo_cat_mob@2x.jpg") top center no-repeat,
+      linear-gradient($color-green-3 302px, $color-white 302px);
+    background-size: 320px auto;
+  }
+
   @media (min-width: $tablet-width) {
     background: none;
   }
@@ -83,26 +89,13 @@
 .promo__image {
   height: 100%;
   object-fit: cover;
-}
+  width: 280px;
 
-//.promo__image {
-//  width: 280px;
-//  height: 270px;
-//
-//  @media (min-width: $tablet-width) {
-//    position: absolute;
-//    left: 0;
-//    bottom: 0;
-//    z-index: -1;
-//    width: 709px;
-//    height: 609px;
-//  }
-//
-//  @media (min-width: $desktop-width) {
-//    width: 552px;
-//    height: 499px;
-//    left: auto;
-//    right: 315px;
-//    top: 0;
-//  }
-//}
+  @media (min-width: $tablet-width) {
+    width: 709px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 552px;
+  }
+}

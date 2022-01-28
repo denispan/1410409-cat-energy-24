@@ -28,18 +28,20 @@
 }
 
 .checkbox-control__input:disabled + .checkbox-control__label {
-  opacity: 30%;
+  opacity: 0.3;
 }
 
 .checkbox-control__input + label::before {
   content: "";
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  top: -3px;
   left: 0;
   width: 30px;
   height: 30px;
   border: 1px solid $color-grey-8;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 26px;
 
   @media (min-width: $tablet-width) {
     width: 40px;
@@ -47,24 +49,16 @@
   }
 }
 
-.checkbox-control__input + label:hover::before {
+.checkbox-control__input + label:hover::before,
+.checkbox-control__input + label:focus::before {
   border-color: $color-grey-12;
 }
 
-.checkbox-control__input:checked + label::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 6px;
-  width: 18px;
-  height: 14px;
-  background-image: url("../img/checkbox.svg");
-  background-repeat: no-repeat;
+.checkbox-control__input + label:active,
+.checkbox-control__input + label:active::before {
+  opacity: 0.3;
+}
 
-  @media (min-width: $tablet-width) {
-    width: 24px;
-    height: 19px;
-    left: 10px;
-  }
+.checkbox-control__input:checked + label::before {
+  background-image: url("../img/checkbox.svg");
 }
