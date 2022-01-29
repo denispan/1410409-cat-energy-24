@@ -23,13 +23,17 @@
   }
 }
 
-.copyright__text {
-  font-size: 16px;
-  line-height: 18px;
-  color: $color-grey-5;
+.copyright__logo-text {
+  width: 114px;
+  height: 18px;
   margin-right: 140px;
 
   @media (min-width: $tablet-width) {
     margin-right: 22px;
   }
+}
+
+.copyright__logo-image {
+  width: 27px;
+  height: 34px;
 }

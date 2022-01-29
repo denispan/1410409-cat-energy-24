@@ -11,13 +11,28 @@
 }
 
 .cat-slider__image {
-  object-fit: fill;
+  @media (min-width: $tablet-width) {
+    width: auto;
+    height: 511px;
+  }
+}
+
+.cat-slider__image--before {
+  @media (min-width: $tablet-width) {
+    clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);
+  }
 }
 
 .cat-slider__image--after {
   position: absolute;
   left: 20px;
   top: 0;
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
+  }
 }
 
 .cat-slider__controls {
