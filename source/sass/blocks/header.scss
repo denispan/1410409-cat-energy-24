@@ -1,6 +1,12 @@
 .header {
   min-width: 280px;
 
+  @media (max-width: $mobile-only-width) {
+    &--inner {
+      outline: 1px solid $color-grey-3;
+    }
+  }
+
   &--index {
     @media (min-width: $desktop-width) {
       &::before {
@@ -26,20 +32,20 @@
   &--menu-closed .header__toggle::before {
     content: "";
     position: absolute;
-    top: 24px;
-    right: 19px;
+    top: 22px;
+    right: 20px;
     width: 24px;
     height: 2px;
     background-color: $color-black;
-    box-shadow: 0 7px 0 0 $color-black, 0 14px 0 0 $color-black;
+    box-shadow: 0 8px 0 0 $color-black, 0 16px 0 0 $color-black;
   }
 
   &--menu-opened .header__toggle::before,
   &--menu-opened .header__toggle::after {
     content: "";
     position: absolute;
-    top: 32px;
-    right: 18px;
+    top: 30px;
+    right: 20px;
     width: 24px;
     height: 2px;
     background-color: $color-black;
@@ -90,11 +96,11 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    padding: 18px 30px 10px 30px;
+    padding: 24px 30px 10px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 60px 0 29px 0;
+    padding: 53px 29px 10px 30px;
   }
 }
 

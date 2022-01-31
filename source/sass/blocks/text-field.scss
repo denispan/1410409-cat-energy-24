@@ -36,13 +36,6 @@
     padding-right: 50px;
   }
 
-  &--iconed + svg {
-    position: absolute;
-    right: 20px;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-
   &::placeholder {
     color: $color-grey-5;
   }
@@ -60,15 +53,47 @@
   &:focus {
     border: 1px solid $color-black;
     outline: 1px solid $color-black;
+
+    & + .text-field__icon {
+      color: $color-green-1;
+    }
   }
 
   &--error {
     outline: 1px solid $color-red-1;
     border: 1px solid $color-red-1;
+
+    & + .text-field__icon {
+      color: $color-red-1;
+    }
   }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+  }
+}
+
+.text-field__icon {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  &--email {
+    width: 20px;
+    height: 14px;
+  }
+
+  &--phone {
+    width: 20px;
+    height: 20px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--email {
+      width: 18px;
+      height: 13px;
+    }
   }
 }

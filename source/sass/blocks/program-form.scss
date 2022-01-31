@@ -99,12 +99,47 @@
 }
 
 .program-form__title {
+  position: relative;
   font-family: $font-custom;
   font-size: 24px;
   line-height: 26px;
   font-weight: 400;
   color: $color-black;
   margin: 0;
+
+  span {
+    padding-right: 20px;
+    background-color: $color-white;
+
+    @media (min-width: $tablet-width) {
+      padding: 0 40px;
+      margin-left: -40px;
+    }
+  }
+
+  &::after {
+    position: absolute;
+    z-index: -1;
+    width: 90vw;
+    height: 2px;
+    content: "";
+    left: 0;
+    top: 20px;
+    background-color: $color-green-1;
+
+    @media (min-width: $tablet-width) {
+      left: -80px;
+      width: 105vw;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 50%;
+      right: 50%;
+      width: 100vw;
+      margin-left: -50vw;
+      margin-right: -50vw;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
@@ -113,8 +148,10 @@
 
   &--contacts {
     margin-bottom: 35px;
+    max-width: 187px;
 
     @media (min-width: $tablet-width) {
+      max-width: 100%;
       margin-bottom: 76px;
     }
   }

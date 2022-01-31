@@ -11,3 +11,17 @@
     gap: 63px 80px;
   }
 }
+
+.catalog-list__item {
+  position: relative;
+}
+
+.catalog-list__item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -20px;
+  width: calc(100% + 40px);
+  height: 1px;
+  background-color: $color-grey-11;
+}

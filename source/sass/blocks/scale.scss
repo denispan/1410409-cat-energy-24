@@ -1,17 +1,22 @@
 .scale {
   position: relative;
-  width: 86px;
+  width: 85px;
   height: 14px;
   background-color: $color-white;
   border: 1px solid $color-grey-8;
   border-radius: 6px;
-  margin: 0 13px;
+  margin: 0 18px;
 
   @media (min-width: $tablet-width) {
     width: 426px;
     height: 6px;
     border: none;
     background-color: $color-grey-10;
+    margin: 0 20px 0 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 20px 0 20px;
   }
 }
 
@@ -42,7 +47,7 @@
     border: 1px solid $color-grey-8;
     border-radius: 50%;
     background-color: $color-white;
-    left: 50%;
+    left: 47%;
     box-shadow: 0 1px 3px rgba($color-black, 0.16);
 
     &::after {
@@ -55,6 +60,10 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 44%;
     }
   }
 }

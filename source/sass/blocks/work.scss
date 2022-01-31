@@ -1,14 +1,16 @@
 .work {
   padding-top: 20px;
-  padding-bottom: 49px;
+  padding-bottom: 47px;
 
   @media (min-width: $tablet-width) {
     padding-top: 45px;
-    padding-bottom: 47px;
+    padding-bottom: 36px;
+    border-bottom: 1px solid $color-grey-11;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 71px;
+    border-bottom: none;
   }
 }
 
@@ -35,9 +37,8 @@
   margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
-    padding: 151px 0 57px 0;
+    padding: 142px 0 57px 0;
     margin-bottom: 0;
-    width: 230px;
     min-height: 280px;
 
     &::after {
@@ -50,8 +51,12 @@
       font-weight: 400;
       color: $color-grey-2;
       z-index: -10;
+      left: 113px;
+      top: -9px;
+    }
+
+    &:first-child::after {
       left: 118px;
-      top: 0;
     }
   }
 
@@ -70,7 +75,7 @@
         position: absolute;
         width: 80px;
         height: 80px;
-        top: 40px;
+        top: 31px;
       }
     }
   }
@@ -105,10 +110,14 @@
 }
 
 .work__title {
-  margin: 0 0 40px 0;
+  margin: 0 0 42px 0;
 }
 
 .work__text {
   margin: 0;
-  max-width: 380px;
+  width: 265px;
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
 }

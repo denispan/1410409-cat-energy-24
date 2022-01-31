@@ -8,7 +8,7 @@
 
 .program-cards__item {
   position: relative;
-  padding: 30px 33px 0 20px;
+  padding: 30px 20px 7px 20px;
   margin-bottom: 20px;
   background-color: $color-grey-2;
 
@@ -35,7 +35,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 77px 280px 42px 52px;
+    padding: 77px 315px 42px 52px;
     margin-bottom: 30px;
 
     &--slim::before {
@@ -56,7 +56,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 77px 52px 40px 51px;
+    padding: 77px 52px 45px 51px;
     margin-bottom: 0;
 
     &--slim::before {
@@ -94,44 +94,56 @@
     font-size: 36px;
     line-height: 36px;
     margin-left: 0;
-    margin-bottom: 24px;
+    margin-bottom: 25px;
     flex-grow: 1;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 162px;
-    margin-bottom: 73px;
+    margin-left: 163px;
+    margin-bottom: 74px;
   }
 }
 
 .program-cards__text {
-  margin: 0 0 23px 0;
+  margin: 0 0 27px 0;
 
   @media (min-width: $tablet-width) {
-    min-width: 345px;
-    margin-bottom: 33px;
+    margin-bottom: 36px;
     color: $color-black;
   }
 
   @media (min-width: $desktop-width) {
     width: auto;
-    margin-bottom: 8px;
+    margin-bottom: 11px;
   }
 }
 
 .program-cards__button {
+  font-size: 16px;
+  line-height: 16px;
   padding: 15px 0;
   justify-content: start;
+  position: relative;
+
+  @media (max-width: $mobile-only-width) {
+    &::before {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 1px;
+      left: 0;
+      top: -4px;
+      background-color: $color-grey-3;
+    }
+  }
 
   &:active {
     opacity: 0.3;
   }
 
-  @media (max-width: $mobile-only-width) {
-    border-top: 1px solid $color-grey-3;
-  }
-
   @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
     width: 165px;
     align-self: flex-end;
   }

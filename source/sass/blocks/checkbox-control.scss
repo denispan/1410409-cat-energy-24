@@ -41,11 +41,12 @@
   border: 1px solid $color-grey-8;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 26px;
+  background-size: 18px 14px;
 
   @media (min-width: $tablet-width) {
     width: 40px;
     height: 40px;
+    background-size: 24px 18px;
   }
 }
 

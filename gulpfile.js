@@ -89,13 +89,13 @@ const copy = (done) => {
   gulp.src([
     'source/fonts/*.{woff2,woff}',
     'source/*.ico',
+    '*.webmanifest',
   ], {
     base: 'source'
   })
     .pipe(gulp.dest('build'))
   done();
 }
-
 
 // Clean
 
@@ -128,7 +128,7 @@ const reload = (done) => {
 
 const watcher = () => {
   gulp.watch('source/sass/**/*.scss', gulp.series(styles));
-  gulp.watch('source/js/script.js', gulp.series(scripts));
+  gulp.watch('source/js/*.js', gulp.series(scripts));
   gulp.watch('source/*.html', gulp.series(html, reload));
 }
 
@@ -149,7 +149,6 @@ export const build = gulp.series(
 );
 
 // Default
-
 
 export default gulp.series(
   clean,

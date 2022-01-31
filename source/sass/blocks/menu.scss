@@ -31,7 +31,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-left: 33px;
+    margin-left: 36px;
 
     &--current {
       position: relative;
@@ -43,8 +43,16 @@
       height: 2px;
       left: 0;
       right: 0;
-      bottom: 5px;
+      bottom: 6px;
       background-color: $color-green-1;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 35px;
+
+    &--current::before {
+      bottom: 10px;
     }
   }
 }
