@@ -17,8 +17,6 @@
 .partnership__wrapper {
   @media (min-width: $desktop-width) {
     padding-top: 95px;
-    position: relative;
-    z-index: 1;
   }
 }
 
@@ -79,9 +77,11 @@
   }
 
   @media (min-width: $desktop-width) {
+    position: relative;
+    z-index: 1;
     background-color: $color-white;
     padding: 59px 80px 56px 80px;
-    width: max-content;
+    display: inline-flex;
   }
 }
 
