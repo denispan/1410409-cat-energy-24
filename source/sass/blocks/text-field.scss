@@ -34,6 +34,7 @@
 
   &--iconed {
     padding-right: 50px;
+    margin-left: 12px;
   }
 
   &::placeholder {
@@ -43,6 +44,10 @@
   &--textarea {
     margin-left: 0;
     resize: none;
+
+    @media (min-width: $tablet-width) {
+      height: 174px;
+    }
   }
 
   &:hover,
@@ -71,12 +76,13 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    padding: 10px 10px 12px 18px;
   }
 }
 
 .text-field__icon {
   position: absolute;
-  right: 20px;
+  right: 14px;
   top: 50%;
   transform: translateY(-50%);
 
@@ -94,6 +100,12 @@
     &--email {
       width: 18px;
       height: 13px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--email {
+      right: 20px;
     }
   }
 }

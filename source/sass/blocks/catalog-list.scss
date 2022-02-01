@@ -14,14 +14,27 @@
 
 .catalog-list__item {
   position: relative;
-}
 
-.catalog-list__item::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -20px;
-  width: calc(100% + 40px);
-  height: 1px;
-  background-color: $color-grey-11;
+  &::before,
+  &:last-child::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -20px;
+    width: calc(100% + 40px);
+    height: 1px;
+    background-color: $color-grey-11;
+  }
+
+  &:last-child::after {
+    top: auto;
+    bottom: -1px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before,
+    &:last-child::after {
+      content: none;
+    }
+  }
 }

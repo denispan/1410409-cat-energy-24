@@ -1,19 +1,30 @@
+.select-program__wrapper {
+  @media (min-width: $tablet-width) {
+    padding: 0 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
+}
+
 .select-program__title {
   font-family: $font-custom;
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
   color: $color-black;
-  margin: 27px 0 39px 0;
+  margin: 28px 0 37px 0;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
-    margin-top: 65px;
+    margin-top: 48px;
     margin-bottom: 54px;
   }
 
   @media (min-width: $desktop-width) {
+    margin-top: 58px;
     margin-bottom: 56px;
   }
 }
@@ -31,7 +42,7 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
-    margin-bottom: 66px;
+    margin-bottom: 65px;
     width: 323px;
   }
 }

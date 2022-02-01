@@ -30,10 +30,10 @@
 
   &--program-type {
     position: relative;
-    padding: 22px 0 19px 0;
+    padding: 28px 0 24px;
 
     @media (min-width: $tablet-width) {
-      padding: 25px 28px;
+      padding: 27px 28px;
       border: 1px solid $color-grey-1;
     }
 
@@ -71,6 +71,11 @@
       padding-top: 75px;
       padding-bottom: 15px;
     }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 69px;
+      padding-bottom: 15px;
+    }
   }
 
   &--comment {
@@ -85,15 +90,16 @@
 
   &--additional {
     padding-top: 10px;
-    padding-bottom: 34px;
+    padding-bottom: 38px;
 
     @media (min-width: $tablet-width) {
       padding-top: 50px;
-      padding-bottom: 54px;
+      padding-bottom: 57px;
     }
 
-    @media (min-width: $tablet-width) {
-      padding-bottom: 61px;
+    @media (min-width: $desktop-width) {
+      padding-top: 53px;
+      padding-bottom: 65px;
     }
   }
 }
@@ -108,7 +114,7 @@
   margin: 0;
 
   span {
-    padding-right: 20px;
+    padding-right: 23px;
     background-color: $color-white;
 
     @media (min-width: $tablet-width) {
@@ -119,17 +125,18 @@
 
   &::after {
     position: absolute;
-    z-index: -1;
-    width: 90vw;
+    z-index: -2;
+    width: 100vw;
     height: 2px;
     content: "";
     left: 0;
-    top: 20px;
+    top: 16px;
     background-color: $color-green-1;
 
     @media (min-width: $tablet-width) {
       left: -80px;
       width: 105vw;
+      top: 21px;
     }
 
     @media (min-width: $desktop-width) {
@@ -138,6 +145,7 @@
       width: 100vw;
       margin-left: -50vw;
       margin-right: -50vw;
+      top: 21px;
     }
   }
 
@@ -148,7 +156,23 @@
 
   &--contacts {
     margin-bottom: 35px;
-    max-width: 187px;
+    max-width: 210px;
+    position: relative;
+
+    @media (max-width: $mobile-only-width) {
+      span {
+        background-color: transparent;
+      }
+
+      span::before {
+        content: "";
+        z-index: -1;
+        position: absolute;
+        width: calc(100% - 9px);
+        height: 100%;
+        background-color: $color-white;
+      }
+    }
 
     @media (min-width: $tablet-width) {
       max-width: 100%;
@@ -157,27 +181,31 @@
   }
 
   &--comment {
-    margin-bottom: 37px;
+    margin-bottom: 36px;
 
     @media (min-width: $tablet-width) {
-      margin-bottom: 76px;
+      margin-bottom: 74px;
     }
   }
 
   &--additional {
-    margin-bottom: 34px;
+    margin-bottom: 37px;
 
     @media (min-width: $tablet-width) {
-      margin-bottom: 57px;
+      margin-bottom: 62px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 62px;
     }
   }
 }
 
 .program-form__field {
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 20px;
+    margin-bottom: 18px;
   }
 
   &:last-child {
@@ -191,10 +219,12 @@
   font-weight: 400;
   color: $color-black;
   margin: 0;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 16px;
+    text-align: start;
   }
 }
 
@@ -206,7 +236,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 32px 60px;
-    padding-bottom: 72px;
+    padding-bottom: 71px;
     align-items: center;
   }
 
@@ -220,7 +250,7 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 32px 60px;
+    gap: 41px 60px;
   }
 
   @media (min-width: $desktop-width) {
@@ -230,10 +260,19 @@
 }
 
 .program-form__button {
-  margin-bottom: 21px;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 19px;
 
   @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
     margin-bottom: 0;
+    padding: 12px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 11px;
   }
 }
 
