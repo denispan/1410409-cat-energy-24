@@ -71,6 +71,11 @@
     }
   }
 
+  &--menu-nojs .header-logo {
+    display: block;
+    margin-bottom: 12px;
+  }
+
   &--menu-nojs .header__nav-list {
     position: static;
     min-height: 0;
@@ -85,6 +90,10 @@
       width: 100vw;
       margin-left: -20px;
     }
+  }
+
+  &--menu-nojs .nav-list {
+    display: block;
   }
 }
 
@@ -119,6 +128,10 @@
 
 .header__nav {
   margin-left: auto;
+
+  @media (min-width: $desktop-width) {
+    width: 49%;
+  }
 }
 
 .header__nav-list {
@@ -130,5 +143,10 @@
   @media (min-width: $tablet-width) {
     position: static;
     display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: flex-end;
   }
 }

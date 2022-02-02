@@ -1,7 +1,8 @@
 const header = document.querySelector('.header');
 const navToggle = document.querySelector('.header__toggle');
 
-header.classList.remove('header--menu-nojs');
+header.classList.remove('header--menu-nojs', 'header--menu-opened');
+header.classList.add('header--menu-closed');
 
 navToggle.addEventListener('click', function() {
   if (header.classList.contains('header--menu-closed')) {

@@ -47,11 +47,11 @@
         font-size: 20px;
         line-height: 22px;
         width: 134px;
-        margin-top: 161px;
+        margin-top: 159px;
         margin-bottom: 4px;
       }
 
-      @media (min-width: $tablet-width) {
+      @media (min-width: $desktop-width) {
         margin-bottom: 10px;
       }
     }
@@ -94,7 +94,7 @@
       @media (min-width: $tablet-width) {
         font-size: 16px;
         line-height: 18px;
-        margin-bottom: 87px;
+        margin-bottom: 89px;
         width: 180px;
         margin-left: auto;
         margin-right: auto;
@@ -141,11 +141,11 @@
     font-size: 20px;
     line-height: 24px;
     text-align: center;
-    margin: 0 auto 13px;
+    margin: 0 auto 14px;
   }
 }
 
-.link {
+.card__link {
   color: $color-grey-6;
 }
 
