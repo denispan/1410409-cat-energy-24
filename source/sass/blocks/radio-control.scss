@@ -1,6 +1,7 @@
 .radio-control {
   position: relative;
   margin-bottom: 23px;
+  padding-left: 45px;
 
   @media (min-width: $tablet-width) {
     padding-left: 60px;
@@ -16,14 +17,13 @@
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
-  padding-left: 45px;
+  padding: 0;
   color: $color-grey-6;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
-    padding-left: 0;
   }
 }
 
@@ -48,9 +48,13 @@
   }
 }
 
-.radio-control__input + label:hover::before,
-.radio-control__input + label:focus::before {
+.radio-control__input:hover + label::before,
+.radio-control__input:focus + label::before, {
   border-color: $color-grey-12;
+}
+
+.radio-control__input:focus + label {
+  outline: 1px solid $color-grey-12;
 }
 
 .radio-control__input + label:active,

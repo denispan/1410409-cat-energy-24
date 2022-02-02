@@ -18,12 +18,12 @@
   font-weight: 400;
   color: $color-black;
   text-transform: uppercase;
-  padding-left: 44px;
+  margin-left: 44px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
-    padding-left: 60px;
+    margin-left: 60px;
   }
 }
 
@@ -50,9 +50,13 @@
   }
 }
 
-.checkbox-control__input + label:hover::before,
-.checkbox-control__input + label:focus::before {
+.checkbox-control__input:hover + label::before,
+.checkbox-control__input:focus + label::before {
   border-color: $color-grey-12;
+}
+
+.checkbox-control__input:focus + label {
+  outline: 1px solid $color-grey-12;
 }
 
 .checkbox-control__input + label:active,

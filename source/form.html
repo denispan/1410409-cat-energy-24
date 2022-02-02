@@ -219,9 +219,17 @@
         </div>
 
         <div class="map">
-          <iframe class="map__view" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1413.234479716711!2d30.322906249517438!3d59.93852432963198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1641256441274!5m2!1sru!2sru"
+          <iframe class="map__view map__view--nojs" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1413.234479716711!2d30.322906249517438!3d59.93852432963198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1641256441274!5m2!1sru!2sru"
                   allowfullscreen="" loading="lazy">
           </iframe>
+          <picture>
+            <source type="image/webp" media="(min-width: 1280px)" srcset="img/map-desktop.webp 1x, img/map-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet.webp 1x, img/map-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/map-mobile.webp 1x, img/map-mobile@2x.webp 2x">
+            <source media="(min-width: 1280px)" srcset="img/map-desktop.jpg 1x, img/map-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/map-tablet.jpg 1x, img/map-tablet@2x.jpg 2x">
+            <img class="map__image map__image--nojs" src="img/map-mobile.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Наш адрес на карте">
+          </picture>
         </div>
       </section>
 
@@ -280,6 +288,7 @@
     </footer>
 
     <script src="./js/menu-toggle.js"></script>
+    <script src="./js/map-nojs_remove.js"></script>
 
   </body>
 </html>

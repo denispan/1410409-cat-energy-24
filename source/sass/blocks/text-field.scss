@@ -32,11 +32,6 @@
   margin-left: 15px;
   outline: none;
 
-  &--iconed {
-    padding-right: 50px;
-    margin-left: 12px;
-  }
-
   &::placeholder {
     color: $color-grey-5;
   }
@@ -77,6 +72,11 @@
     font-size: 20px;
     line-height: 30px;
     padding: 10px 10px 12px 18px;
+  }
+
+  &--iconed {
+    padding-right: 50px;
+    margin-left: 12px;
   }
 }
 
